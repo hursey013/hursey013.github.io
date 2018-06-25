@@ -2,34 +2,35 @@ const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-  entry: './_src/index.js',
+  entry: './assets/js/index.js',
   output: {
-    path: path.resolve(__dirname, 'assets/js'),
+    path: path.resolve(__dirname, '_site/assets/js'),
     filename: 'bundle.js',
   },
   devtool: 'cheap-module-source-map',
   module: {
     rules: [
       {
-        test: /\.css$/,
+        test: /\.scss$/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           use: [
-            { loader: 'css-loader', options: { importLoaders: 1 } },
+            'css-loader',
             {
               loader: 'postcss-loader',
               options: {
                 ident: 'postcss',
                 plugins: () => [
-                  require('tailwindcss')('./_src/tailwind.js'),
+                  require('tailwindcss')('./tailwind.js'),
                   require('autoprefixer')(),
                 ],
               },
             },
+            'sass-loader',
           ],
         }),
       }
-    ],
+    ]
   },
   plugins: [
     new ExtractTextPlugin({

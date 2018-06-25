@@ -8,7 +8,14 @@ defaults:
       layout: "default"
 
 exclude:
+  - assets/css
+  - assets/js
   - Gemfile*
   - node_modules
   - package*.json
+  - tailwind.js
   - webpack.config.js
+
+keep_files:
+  - assets/css
+  - assets/js

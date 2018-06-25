@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "build": "rm -rf ./_site/* && webpack -p && bundle exec jekyll build",
+    "build": "rm -rf ./_site/ && webpack -p && bundle exec jekyll build",
     "deploy": "gh-pages -b master -d _site",
     "predeploy": "npm run build && echo 'bhurst.me' > ./_site/CNAME",
     "start": "concurrently \"npm:watch-*\"",
@@ -20,6 +20,7 @@
     "node-sass": "^4.9.0",
     "postcss": "^6.0.22",
     "postcss-loader": "^2.1.5",
+    "sass-loader": "^7.0.3",
     "style-loader": "^0.21.0",
     "webpack": "^4.8.3",
     "webpack-cli": "^3.0.8"

@@ -4,7 +4,6 @@
   tags:
     - Javascript
     - Firebase
-    - Personal
     - PostCSS
     - Sass
     - Tailwindcss
@@ -13,7 +12,6 @@
   href: https://plainlanguage.gov
   description: A resource to help federal employees write in plain language and comply with the Plain Writing Act of 2010
   tags:
-    - 18F
     - Federalist
     - Jekyll
     - Research
@@ -24,7 +22,6 @@
   href: https://login.gov
   description: Simple, secure access to government services online
   tags:
-    - 18F
     - Basscss
     - CI
     - Federalist
@@ -40,7 +37,6 @@
   description: Digital display for combined view of family's Google Calendars
   tags:
     - DakBoard
-    - Personal
     - Python
     - Raspberry Pi
     - Shell
@@ -52,7 +48,6 @@
     - Content
     - CSS
     - HTML
-    - Personal
     - UI/UX
     - Wireframes
 - name: Pima County
