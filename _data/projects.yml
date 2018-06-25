@@ -2,8 +2,10 @@
   href: https://budgetduo.com
   description: Calculate how much you and your partner should contribute towards shared expenses
   tags:
+    - Chart.js
     - Javascript
     - Firebase
+    - Github Pages
     - PostCSS
     - Sass
     - Tailwindcss
@@ -13,9 +15,12 @@
   description: A resource to help federal employees write in plain language and comply with the Plain Writing Act of 2010
   tags:
     - Federalist
+    - Git
     - Jekyll
+    - IA
     - Research
     - Sass
+    - Training
     - USWDS
     - Webpack
 - name: login.gov
@@ -25,11 +30,13 @@
     - Basscss
     - CI
     - Federalist
+    - Git
     - i18n
     - Javascript
     - Jekyll
     - Research
     - Ruby on Rails
+    - UX
     - Sass
     - Wireframes
 - name: Raspberry Pi Calendar
@@ -48,7 +55,8 @@
     - Content
     - CSS
     - HTML
-    - UI/UX
+    - Training
+    - UX
     - Wireframes
 - name: Pima County
   href: https://pimasheriff.org
