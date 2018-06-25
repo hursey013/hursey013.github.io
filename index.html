@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<div class="lg:flex lg:min-h-screen border-t-8 border-indigo-light">
+  <header class="bg-white w-full lg:w-1/3 p-8 lg:p-16 lg:max-w-sm">
+    <img src="assets/images/photo.jpg" class="w-16 rounded-full mb-2" alt="Photo of Brian Hurst">
+    <h1 class="font-semibold text-grey-darkest text-3xl tracking-tight leading-none">Brian Hurst</h1>
+    <span class="block mb-8 uppercase divider">UX / Front end designer</span>
+    <p class="mb-8 text-lg leading-loose">Hello! I'm a multi-disciplined developer &amp; designer based in <a href="https://goo.gl/maps/vZsgyxQLNnA2">Charlottesville, VA</a>. I currently work with the awesome folks at <a href="https://18f.gsa.gov">18F</a> to deliver better government services through technology and design. Prior to that, I spent time working in the <a href="https://www.defense.gov/">Department of Defense</a> as well as <a href="http://pima.gov">local government</a>, during which time I founded <a href="http://piopost.com">PIOpost</a> &mdash; a social media management platform for public safety agencies.</p>
+    {% include social.html %}
+  </header>
+  <main class="w-full lg:w-2/3 p-8 lg:p-16 max-w-2xl">
+    <h2 class="mb-4 font-normal leading-none">Recent projects</h2>
+    {% include projects.html %}
+  </main>
+</div>

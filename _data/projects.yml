@@ -1,0 +1,67 @@
+- name: BudgetDuo
+  href: https://budgetduo.com
+  description: Calculate how much you and your partner should contribute towards shared expenses
+  tags:
+    - Javascript
+    - Firebase
+    - Personal
+    - PostCSS
+    - Sass
+    - Tailwindcss
+    - Webpack
+- name: Plainlanguage.gov
+  href: https://plainlanguage.gov
+  description: A resource to help federal employees write in plain language and comply with the Plain Writing Act of 2010
+  tags:
+    - 18F
+    - Federalist
+    - Jekyll
+    - Research
+    - Sass
+    - USWDS
+    - Webpack
+- name: login.gov
+  href: https://login.gov
+  description: Simple, secure access to government services online
+  tags:
+    - 18F
+    - Basscss
+    - CI
+    - Federalist
+    - i18n
+    - Javascript
+    - Jekyll
+    - Research
+    - Ruby on Rails
+    - Sass
+    - Wireframes
+- name: Raspberry Pi Calendar
+  href: https://photos.app.goo.gl/cZdq9qR5FsoaxPKh1
+  description: Digital display for combined view of family's Google Calendars
+  tags:
+    - DakBoard
+    - Personal
+    - Python
+    - Raspberry Pi
+    - Shell
+- name: PIOpost
+  href: http://piopost.com
+  description: A powerful social media management platform for the public safety industry
+  tags:
+    - Bootstrap
+    - Content
+    - CSS
+    - HTML
+    - Personal
+    - UI/UX
+    - Wireframes
+- name: Pima County
+  href: https://pimasheriff.org
+  description: Local government website for the Pima County Sheriff's Department
+  tags:
+    - Bootstrap
+    - CMS
+    - DevOps
+    - jQuery
+    - MySQL
+    - PHP

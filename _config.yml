@@ -1,0 +1,14 @@
+title: Brian Hurst - UX / Front end designer
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+
+exclude:
+  - Gemfile*
+  - node_modules
+  - package*.json
+  - webpack.config.js

@@ -1,0 +1,9 @@
+<ul class="list-reset">
+  {% for social in site.data.social %}
+    <li class="inline-block mr-2">
+      <a href="{{ social.href }}" class="transition bg-indigo hover:bg-indigo-dark text-indigo-lightest hover:text-indigo-lightest rounded-full p-3 flex items-center justify-center" title="{{ social.name }}">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="stroke-current h-6 w-6">{{ social.icon }}</svg>
+        </a>
+    </li>
+  {% endfor %}
+</ul>
