@@ -15,7 +15,7 @@
   description: A resource to help federal employees write in plain language and comply with the Plain Writing Act of 2010
   tags:
     - Federalist
-    - Git
+    - Github
     - Jekyll
     - IA
     - Research
@@ -31,7 +31,7 @@
     - Basscss
     - CI
     - Federalist
-    - Git
+    - Github
     - i18n
     - Javascript
     - Jekyll
@@ -65,7 +65,6 @@
   tags:
     - Bootstrap
     - CMS
-    - DevOps
     - jQuery
     - MySQL
     - PHP
