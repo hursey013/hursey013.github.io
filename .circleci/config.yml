@@ -36,4 +36,10 @@ jobs:
               git config --global user.email "$USER_EMAIL"
               git config --global user.name "$USER_NAME"
               npm run deploy
+
+              curl -X DELETE "https://api.cloudflare.com/client/v4/zones/$CLOUDFLARE_ZONE/purge_cache" \
+                 -H "X-Auth-Email: $CLOUDFLARE_EMAIL" \
+                 -H "X-Auth-Key: $CLOUDFLARE_AUTH_KEY" \
+                 -H "Content-Type: application/json" \
+                 --data '{"purge_everything":true}'
             fi
