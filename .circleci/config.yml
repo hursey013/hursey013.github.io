@@ -12,7 +12,6 @@ jobs:
           keys:
           - v1-node-dependencies-{{ checksum "package-lock.json" }}
           - v1-node-dependencies-
-      # - run: npm install gh-pages webpack webpack-cli -g
       - run: npm install
       - save_cache:
           paths:
@@ -22,7 +21,7 @@ jobs:
           keys:
           - v1-gem-dependencies-{{ checksum "Gemfile.lock" }}
           - v1-gem-dependencies-
-      - run: bundle install
+      - run: bundle install --jobs=4 --retry=3 --path vendor/bundle
       - save_cache:
           paths:
             - vendor/bundle
@@ -31,5 +30,7 @@ jobs:
           name: deploy
           command: |
             if [ "${CIRCLE_BRANCH}" = "src" ]; then
+              git config --global user.email "$USER_EMAIL"
+              git config --global user.name "$USER_NAME"
               npm run deploy
             fi
