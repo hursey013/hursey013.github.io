@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "build": "rm -rf ./_site/ && webpack -p && bundle exec jekyll build",
-    "deploy": "gh-pages -b master -d _site",
+    "deploy": "gh-pages -b master -d _site --dotfiles=true",
     "predeploy": "npm run build && echo 'bhurst.me' > ./_site/CNAME",
     "start": "concurrently \"npm:watch-*\"",
     "watch-jekyll": "bundle exec jekyll serve",
