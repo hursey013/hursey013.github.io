@@ -17,6 +17,9 @@ exclude:
   - vendor
   - webpack.config.js
 
+include:
+  - .circleci
+
 keep_files:
   - assets/css
   - assets/js
