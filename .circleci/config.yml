@@ -1,0 +1,35 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby:2.4-node-browsers
+    steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "ea:42:68:11:03:06:4e:36:8b:99:fd:54:9c:89:81:55"
+      - checkout
+      - restore_cache:
+          keys:
+          - v1-node-dependencies-{{ checksum "package-lock.json" }}
+          - v1-node-dependencies-
+      # - run: npm install gh-pages webpack webpack-cli -g
+      - run: npm install
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-node-dependencies-{{ checksum "package-lock.json" }}
+      - restore_cache:
+          keys:
+          - v1-gem-dependencies-{{ checksum "Gemfile.lock" }}
+          - v1-gem-dependencies-
+      - run: bundle install
+      - save_cache:
+          paths:
+            - vendor/bundle
+          key: v1-gem-dependencies-{{ checksum "Gemfile.lock" }}
+      - deploy:
+          name: deploy
+          command: |
+            if [ "${CIRCLE_BRANCH}" = "src" ]; then
+              npm run deploy
+            fi
