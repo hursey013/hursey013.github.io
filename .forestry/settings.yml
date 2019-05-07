@@ -4,9 +4,10 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: document
-  path: _data/projects.yml
-  label: Projects
+- type: directory
+  path: _data
+  label: Data
+  create: none
   match: "**/*"
 - type: jekyll-pages
   label: Pages
