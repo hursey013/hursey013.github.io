@@ -1,3 +1,22 @@
+- name: FindTreatment.gov
+  href: https://findtreatment.gov
+  description: Find state-licensed treatment near you for addiction and substance use disorder
+  tags:
+    - Places API
+    - React
+    - React Router
+    - Redux
+    - Redux Form
+    - Tailwind CSS
+    - styled-components
+- name: A Guide to the Paperwork Reduction Act
+  href: https://pra.digital.gov
+  description: A resource to help federal employees comply with the Paperwork Reduction Act (PRA)
+  tags:
+    - Gulp
+    - Federalist
+    - Jekyll
+    - USWDS
 - name: BudgetDuo
   href: https://budgetduo.com
   description: Calculate how much you and your partner should contribute towards shared expenses
@@ -46,23 +65,3 @@
     - Python
     - Raspberry Pi
     - Shell
-- name: PIOpost
-  href: http://piopost.com
-  description: A powerful social media management platform for the public safety industry
-  tags:
-    - Bootstrap
-    - Content
-    - CSS
-    - HTML
-    - Training
-    - UX
-    - Wireframes
-- name: Pima County
-  href: https://pimasheriff.org
-  description: Local government website for the Pima County Sheriff's Department
-  tags:
-    - Bootstrap
-    - CMS
-    - jQuery
-    - MySQL
-    - PHP
