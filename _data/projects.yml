@@ -2,14 +2,12 @@
   href: https://budgetduo.com
   description: Calculate how much you and your partner should contribute towards shared expenses
   tags:
-    - Chart.js
-    - Javascript
+    - React
+    - Redux
     - Firebase
-    - Github Pages
-    - PostCSS
-    - Sass
-    - Tailwindcss
-    - Webpack
+    - Tailwind CSS
+    - styled-components
+    - dinero.js
 - name: Plainlanguage.gov
   href: https://plainlanguage.gov
   description: A resource to help federal employees write in plain language and comply with the Plain Writing Act of 2010
